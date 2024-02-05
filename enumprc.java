@@ -4,12 +4,19 @@ enum Status{
 
 public class enumprc {
     public static void main (String[] args) {
-        //Status s = Status.Running;
+        Status s = Status.Failed;
 
-        Status[] ss = Status.values();
+        //Status[] ss = Status.values();
+       
 
-        for (Status s : ss){
-            System.out.println(s + " : " + s.ordinal());
-        }
+        if (s == Status.Running)
+            System.out.println("Your code is Running now");
+        else if (s == Status.Pending)
+            System.out.println("Please wait, Your  code is Pending!");
+        else if(s == Status.Failed)
+            System.out.println("Sorry your Code has failed");
+        else
+            System.out.println("Congratulations! Your code has been successfully executed.");
+
     }
 }
