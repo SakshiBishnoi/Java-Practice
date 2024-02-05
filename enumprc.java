@@ -18,5 +18,24 @@ public class enumprc {
         else
             System.out.println("Congratulations! Your code has been successfully executed.");
 
+    
+
+        switch(s){
+            case Running:
+                System.out.println("Running");
+            break;
+            case Failed:
+            System.out.println("Failed");
+                
+            break;
+            case Pending:
+                System.out.println("Pending");
+            break;
+            default:
+                System.out.println("completed");
+            break;
+            
+
+        }
     }
 }
