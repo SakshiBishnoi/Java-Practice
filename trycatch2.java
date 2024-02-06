@@ -11,10 +11,7 @@ public class trycatch2 {
             System.out.println(arr[3]);
             System.out.println(arr[6]);   
         }
-        try{
-            System.out.println(str.length());
-        }
-
+        
         catch(ArithmeticException e){
             System.out.println("Error! Cannot divide by zero.");
         }
@@ -22,8 +19,11 @@ public class trycatch2 {
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Out of array");
         }
+        try{
+            System.out.println(str.length());
+        }
 
-        catch(Exception e){
+        catch(NullPointerException e){
             System.out.println("error" + e);
         }
         //System.out.println("complete");
